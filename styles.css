@@ -17,6 +17,14 @@ body{font-family:Segoe UI, Roboto, Arial, sans-serif;margin:0;background:var(--b
 .site-title{display:flex;flex-direction:column}
 .site-title .tagline{margin-top:6px}
 
+/* Social button (Facebook) in header */
+.site-title .social-link{display:inline-block;margin-top:10px}
+.site-title .fb-icon{width:48px;height:auto;border-radius:50%;background:#ffffff;padding:6px;display:block;box-shadow:0 4px 12px rgba(0,0,0,0.12)}
+
+/* Side-by-side social buttons */
+.social-buttons{display:flex;gap:12px;align-items:center;margin-top:10px}
+.social-buttons .social-icon{width:48px;height:auto;border-radius:50%;background:#ffffff;padding:6px;display:block;box-shadow:0 4px 12px rgba(0,0,0,0.12)}
+
 /* Layout: duaalsambad hinnakirjadele */
 .two-columns{display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:start}
 .centered{max-width:520px;margin:16px auto}
@@ -40,4 +48,6 @@ th{background:transparent;color:var(--accent)}
   th, td{padding:10px}
   .logo{width:72px}
   .two-columns{grid-template-columns:1fr}
+  .site-title .fb-icon{width:40px}
+  .social-buttons .social-icon{width:40px}
 }
