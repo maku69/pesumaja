@@ -1,0 +1,36 @@
+/* Lihtne stiil Haapsalu Pesumajale */
+:root{
+  --bg:#f7f9fb;
+  --card:#ffffff;
+  --accent:#2b6ea3;
+  --text:#222;
+}
+*{box-sizing:border-box}
+body{font-family:Segoe UI, Roboto, Arial, sans-serif;margin:0;background:var(--bg);color:var(--text);line-height:1.4}
+.container{max-width:900px;margin:0 auto;padding:20px}
+.site-header{background:var(--accent);color:white;padding:24px 0}
+.site-header .container{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.site-header h1{margin:0;font-size:1.8rem}
+.logo{width:110px;height:auto;border-radius:10px;background:#ffffff;padding:8px;display:inline-block;box-shadow:0 4px 12px rgba(0,0,0,0.08)}
+
+/* Wrapper for title + tagline to stack vertically beside logo */
+.site-title{display:flex;flex-direction:column}
+.site-title .tagline{margin-top:6px}
+
+/* Layout: duaalsambad hinnakirjadele */
+.two-columns{display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:start}
+.centered{max-width:520px;margin:16px auto}
+.tagline{opacity:0.95;margin-top:6px}
+h2{margin-top:0}
+.price-category{background:var(--card);padding:14px;margin:12px 0;border-radius:8px;box-shadow:0 1px 3px rgba(0,0,0,0.05)}
+table{width:100%;border-collapse:collapse}
+th, td{padding:8px;text-align:left;border-bottom:1px solid #eee}
+th{background:transparent;color:var(--accent)}
+.site-footer{padding:12px 0;text-align:center;color:#666}
+@media (max-width:600px){
+  .container{padding:12px}
+  .site-header h1{font-size:1.4rem}
+  th, td{padding:10px}
+  .logo{width:72px}
+  .two-columns{grid-template-columns:1fr}
+}
